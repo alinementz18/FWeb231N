@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemplo de jQuery</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<h1>Bem-vindo!</h1>
+
+<button id="botao">Clique aqui para ver a mensagem</button>
+
+<div id="mensagem">Bem-vindo a minha página!</div>
+
+<script>
+$(document).ready(function(){
+    $("#botao").click(function(){
+        $("#mensagem").fadeIn();
+    });
+});
+</script>
+
+</body>
+</html>
