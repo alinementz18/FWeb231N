@@ -11,6 +11,13 @@
     right: 0;
 }
 
+#imagemsite {
+    width: 70%;
+    height: 100%;
+
+
+}
+
 .menu-opcoes ul {
     font-size: 15px;
 }
@@ -101,7 +108,7 @@ header {
 }
 
 .busca input[type=search] {
-    width: 170px;
+    width: 50px;
 }
 
 .destaque { 

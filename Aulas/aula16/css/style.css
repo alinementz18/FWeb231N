@@ -1,0 +1,71 @@
+.item1{
+    background-image: url("../img/aspirador.jpg");
+    background-size: contain;
+    background-position: center;
+    height: 300px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+
+.item2{
+    background-image: url("../img/batedeira1.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+
+.item3{
+    background-image: url("../img/ferro.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+
+.item4{
+    background-image: url("../img/jogo\ de\ panelas.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+
+.item5{
+    background-image: url("../img/liquidificador.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+
+.item6{
+    background-image: url("../img/note.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 300px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
