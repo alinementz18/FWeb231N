@@ -1,0 +1,29 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+.parallax-window {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    background: transparent;
+}
+
+.parallax-window .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.content-container {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
