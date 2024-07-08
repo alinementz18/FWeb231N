@@ -1,3 +1,4 @@
+// Configurações do jogo
 var config = {
     type: Phaser.WEBGL,
     width: 640,
@@ -15,7 +16,7 @@ var snake;
 var food;
 var cursors;
 
-//  Direction consts
+ // Constantes de direção
 var UP = 0;
 var DOWN = 1;
 var LEFT = 2;
@@ -24,6 +25,7 @@ var RIGHT = 3;
 var game = new Phaser.Game(config);
 
 function preload ()
+  // Carregamento de recursos
 {
     this.load.setBaseURL('https://labs.phaser.io');
     this.load.image('food', 'assets/games/snake/food.png');
@@ -31,6 +33,7 @@ function preload ()
 }
 
 function create ()
+ // Definição da classe Food
 {
     var Food = new Phaser.Class({
         Extends: Phaser.GameObjects.Image,
@@ -49,7 +52,7 @@ function create ()
             this.total++;
         }
     });
-
+     // Definição da classe Snake
     var Snake = new Phaser.Class({
         initialize:
         function Snake (scene, x, y)
@@ -165,8 +168,12 @@ function create ()
         }
     });
 
+    // Criação do objeto Food e Snake
+
     food = new Food(this, 3, 4);
     snake = new Snake(this, 8, 8);
+
+     // Captura de teclas do teclado
 
     cursors = this.input.keyboard.createCursorKeys();
 }

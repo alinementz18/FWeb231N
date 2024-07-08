@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   
+    <!---Define o icone do site-->
+    <link rel="icon" href="./Incone/iconeSite.png">
+
+    <!-- Link para o arquivo CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!--Linkando o script-->
+    <!-- O atributo 'defer' garante que o script seja executado apenas após o HTML ser completamente carregado -->
+    <script defer src="./js/script.js"></script>
+
+    <title>Pokedex</title>
+</head>
+
+<body>
+
+    <main>
+        <!-- Imagem do Pokémon -->
+        <img src="#" alt="pokemon" class="pokemon__image">
+
+        <!-- Exibição de informações do Pokémon -->
+        <h1 class="pokemon_data">
+            <span class="pokemon_number"></span> -
+            <span class="pokemon_name"></span>
+            <p>Peso: <Span class="pokemon_peso"></Span></p>
+            <p>Tipo: <Span class="pokemon_tipo"></Span></p>
+        </h1>
+
+         <!-- Formulário de busca -->
+        <form class="form">
+            <input type="search" class="input_search" placeholder="Name or Number" required>
+        </form>
+        
+        <!-- Botões de navegação -->
+        <div class="buttons">
+
+            <button class="button btn-prev">Prev &lt;</button>
+            <button class="button btn-next">next &gt;</button>
+        </div>
+
+        <!-- Imagem da Pokedex -->
+        <img src="./Imagens/pokedex.png" alt="pokedex" class="pokedex">
+
+        <!-- Áudio de fundo -->
+        <audio class ='background_audio' autoplay>
+            <source src="./audio/themesMusic.mp3" type="audio/mpeg">
+        </audio>
+        
+         <!-- Áudio do Pokémon -->
+        <audio class="pokemon_sound" autoplay>
+            <source src="" type="audio/ogg">
+        </audio>
+
+    </main>
+
+</body>
+
+</html>
