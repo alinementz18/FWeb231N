@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de polygonizr</title>
+  <style>
+    html, body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    #site-landing {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div id="site-landing">
+    <h1>Aline Mentz</h1>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+          integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+          crossorigin="anonymous"></script>
+  <script src="../src/polygonizr.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      let $siteLanding = $('#site-landing');
+
+      // Initialize polygonizr plugin
+      function initializePolygonizr() {
+        $siteLanding.polygonizr({
+          canvasHeight: $siteLanding.height(),
+          canvasWidth: $siteLanding.width(),
+          numShapes: 10,
+          shapeColors: ['#ff0000', '#00ff00', '#0000ff']
+        });
+      }
+
+      // Initialize on document ready
+      initializePolygonizr();
+
+      // Refresh on window resize
+      $(window).resize(function () {
+        $siteLanding.polygonizr("stop");
+        initializePolygonizr();
+        $siteLanding.polygonizr("refresh");
+      });
+    });
+  </script>
+</body>
+</html>
